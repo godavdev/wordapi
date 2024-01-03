@@ -4,4 +4,4 @@ import { getWord } from '../controllers/word.controllers'
 export const router = Router()
 /** /api/ */
 
-router.get('/api/', getWord)
+router.get('/', getWord)
