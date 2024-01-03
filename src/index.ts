@@ -4,8 +4,10 @@ import { router } from './routes/word.routes'
 
 export const app = express()
 
+const PORT = process.env.PORT
+
 app.use(cors())
 app.use(express.json())
 app.use(router)
-app.listen(3000)
-console.log('Server on port 3000')
+app.listen(PORT || 3000)
+console.log('Hola en' + PORT)
