@@ -1,14 +1,15 @@
 {
-  "homepage": "https://godavdev.github.io/wordapi/",
   "name": "wordapi",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.ts"
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "start": "node ./dist/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "godav",
   "license": "ISC",
   "devDependencies": {
     "@types/cors": "^2.8.17",
